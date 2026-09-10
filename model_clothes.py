@@ -355,3 +355,7 @@ model_2 = FashionModelMNISTV2(input_shape= 1, #input shape depends on the number
                               hidden_units= 10,
                                output_shape= len(photos_name)).to(device)
 
+torch.manual_seed(42)
+images = torch.randn(size=(32, 3, 64, 64))
+test_image = images[0]
+
